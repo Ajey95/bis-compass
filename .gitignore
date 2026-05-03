@@ -22,6 +22,9 @@ ENV/
 chroma_db/
 *.pdf
 data/bis_sp21.pdf
+!dataset.pdf
+!chroma_db/
+!chroma_db/chroma.sqlite3
 
 # Build
 dist/
