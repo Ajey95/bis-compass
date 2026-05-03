@@ -1,0 +1,39 @@
+# Environment
+.env
+.env.local
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data
+chroma_db/
+*.pdf
+data/bis_sp21.pdf
+
+# Build
+dist/
+build/
+*.egg-info/
+node_modules/
+
+# Results
+results*.json
+team_results.json
+*.log
+
+# Frontend
+frontend/dist/
+frontend/node_modules/

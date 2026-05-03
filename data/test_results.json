@@ -1,0 +1,112 @@
+[
+  {
+    "id": "PUB-01",
+    "retrieved_standards": [
+      "IS 269:1989",
+      "IS 1786:2008",
+      "IS 1489-1:1991",
+      "IS 3972:1966",
+      "IS 8112:1989"
+    ],
+    "latency_seconds": 0.0012
+  },
+  {
+    "id": "PUB-02",
+    "retrieved_standards": [
+      "IS 383:2016",
+      "IS 2116:1980",
+      "IS 2386:1963",
+      "IS 456:2000",
+      "IS 458:2003"
+    ],
+    "latency_seconds": 0.0005
+  },
+  {
+    "id": "PUB-03",
+    "retrieved_standards": [
+      "IS 458:2003",
+      "IS 456:2000",
+      "IS 269:1989",
+      "IS 1489-1:1991",
+      "IS 3972:1966"
+    ],
+    "latency_seconds": 0.0004
+  },
+  {
+    "id": "PUB-04",
+    "retrieved_standards": [
+      "IS 2185 (Part 2):1983",
+      "IS 2185 (Part 1):1979",
+      "IS 456:2000",
+      "IS 458:2003",
+      "IS 1077:2000"
+    ],
+    "latency_seconds": 0.0007
+  },
+  {
+    "id": "PUB-05",
+    "retrieved_standards": [
+      "IS 459:1992",
+      "IS 269:1989",
+      "IS 1489-1:1991",
+      "IS 456:2000",
+      "IS 455:1989"
+    ],
+    "latency_seconds": 0.0006
+  },
+  {
+    "id": "PUB-06",
+    "retrieved_standards": [
+      "IS 455:1989",
+      "IS 269:1989",
+      "IS 1489-1:1991",
+      "IS 3972:1966",
+      "IS 8112:1989"
+    ],
+    "latency_seconds": 0.0004
+  },
+  {
+    "id": "PUB-07",
+    "retrieved_standards": [
+      "IS 1489-1:1991",
+      "IS 269:1989",
+      "IS 3972:1966",
+      "IS 8112:1989",
+      "IS 12269:1987"
+    ],
+    "latency_seconds": 0.0004
+  },
+  {
+    "id": "PUB-08",
+    "retrieved_standards": [
+      "IS 269:1989",
+      "IS 1489-1:1991",
+      "IS 3972:1966",
+      "IS 455:1989",
+      "IS 2185 (Part 1):1979"
+    ],
+    "latency_seconds": 0.0004
+  },
+  {
+    "id": "PUB-09",
+    "retrieved_standards": [
+      "IS 456:2000",
+      "IS 458:2003",
+      "IS 269:1989",
+      "IS 1489-1:1991",
+      "IS 455:1989"
+    ],
+    "latency_seconds": 0.0004
+  },
+  {
+    "id": "PUB-10",
+    "retrieved_standards": [
+      "IS 269:1989",
+      "IS 1489-1:1991",
+      "IS 455:1989",
+      "IS 456:2000",
+      "IS 3972:1966"
+    ],
+    "latency_seconds": 0.0005
+  }
+]
