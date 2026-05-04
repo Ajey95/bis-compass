@@ -19,8 +19,9 @@ The final submission intentionally keeps the implementation simple to inspect an
 ## Quick Start
 
 1. Install dependencies.
-2. Run `inference.py` directly using the bundled ChromaDB embeddings.
-3. Use `eval_script.py` to validate the output format and metrics.
+2. Run ingestion once to build `./chroma_db`.
+3. Run `inference.py` on the public test set or your own JSON file.
+4. Use `eval_script.py` to validate the output format and metrics.
 
 ## What This Project Does
 
@@ -187,22 +188,6 @@ cd bis-compass
 pip install -r requirements.txt
 ```
 
-### Quick Run: Inference Only
-
-Fresh clones do not need to run ingestion first because the prebuilt embeddings are committed in `chroma_db/chroma.sqlite3`.
-
-```powershell
-cd bis-compass
-pip install -r requirements.txt
-python inference.py --input data/public_test_set.json --output team_results.json
-```
-
-Optional validation:
-
-```powershell
-python eval_script.py --results team_results.json
-```
-
 ### Optional API Key
 
 Create a `.env` file if you want live LLM rationales:
@@ -234,7 +219,7 @@ Recommended local data files:
 
 ## Ingestion
 
-Run ingestion only if you want to rebuild the vector store from the PDF:
+Run ingestion once to build the vector store:
 
 ```powershell
 cd bis-compass
@@ -378,7 +363,7 @@ Messages like `Failed to send telemetry event ...` are noisy but usually harmles
 
 ### Inference output looks empty
 
-Make sure `chroma_db/chroma.sqlite3` is present in the repo. Fresh clones should be able to run inference directly from the committed embeddings; only rebuild from the PDF if you intentionally want a new index.
+Make sure you have already run ingestion so `./chroma_db` exists.
 
 ### Groq call fails with a model error
 
