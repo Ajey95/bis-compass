@@ -184,7 +184,7 @@ bis-compass/
 From the repo root:
 
 ```powershell
-cd d:\projects\buerau\bis-compass
+cd bis-compass
 pip install -r requirements.txt
 ```
 
@@ -204,8 +204,8 @@ Place the BIS SP 21 PDF somewhere accessible and point the ingest script to it.
 
 Common paths:
 
-- `d:\projects\buerau\Bureau of Indian Standards x Sigma Squad AI Hackathon Materials\dataset.pdf`
-- or `d:\projects\buerau\bis-compass\data\bis_sp21.pdf` if you copy it there
+- `dataset.pdf` at the repository root
+- or `data/bis_sp21.pdf` if you prefer to keep the source PDF under `data/`
 
 The data folder for your local test files can be:
 
@@ -222,8 +222,8 @@ Recommended local data files:
 Run ingestion once to build the vector store:
 
 ```powershell
-cd d:\projects\buerau\bis-compass
-d:/projects/buerau/venv/Scripts/python.exe scripts/ingest.py --pdf "d:\projects\buerau\Bureau of Indian Standards x Sigma Squad AI Hackathon Materials\dataset.pdf"
+cd bis-compass
+python scripts/ingest.py --pdf dataset.pdf
 ```
 
 What this does:
@@ -241,14 +241,14 @@ What this does:
 This is the exact style the judges will use:
 
 ```powershell
-cd d:\projects\buerau\bis-compass
-d:/projects/buerau/venv/Scripts/python.exe inference.py --input "d:\projects\buerau\Bureau of Indian Standards x Sigma Squad AI Hackathon Materials\public_test_set.json" --output team_results.json
+cd bis-compass
+python inference.py --input data/public_test_set.json --output team_results.json
 ```
 
 ### Public test validation
 
 ```powershell
-d:/projects/buerau/venv/Scripts/python.exe eval_script.py --results team_results.json
+python eval_script.py --results team_results.json
 ```
 
 Expected output fields per item:
@@ -268,14 +268,14 @@ Expected output fields per item:
 ### Start the backend
 
 ```powershell
-cd d:\projects\buerau\bis-compass
+cd bis-compass
 uvicorn src.api:app --reload --port 8000
 ```
 
 ### Start the frontend
 
 ```powershell
-cd d:\projects\buerau\bis-compass\frontend
+cd frontend
 npm install
 npm run dev
 ```
